@@ -1,13 +1,21 @@
 # Firebase
 ## Initialize firebase
 const app = firebase.initializeApp({
+
   apiKey: "",
+  
   authDomain: "",
+  
   databaseURL:"" ,
+  
   projectId:"" ,
+  
   storageBucket:"" ,
+  
   messagingSenderId:"" ,
+  
   appId: ""
+  
 });
 
 
@@ -33,7 +41,7 @@ To use firebase cloud firestore, first you'll need to import firestore from fire
 import firestore from 'firebase/firestore';
 ```
 
-*Connect to a collection:*
+*Connect to a collection:
 ````javascript
 firestore.collection('books'); // returns a collection reference called books
 ```
