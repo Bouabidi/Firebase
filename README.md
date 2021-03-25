@@ -1,24 +1,16 @@
 # Firebase
 ## Initialize firebase
+```javascript
 const app = firebase.initializeApp({
-
   apiKey: "",
-  
-  authDomain: "",
-  
-  databaseURL:"" ,
-  
-  projectId:"" ,
-  
+  authDomain: "", 
+  databaseURL:"" , 
+  projectId:"" , 
   storageBucket:"" ,
-  
   messagingSenderId:"" ,
-  
-  appId: ""
-  
+  appId: "" 
 });
-
-
+```
 ## Firebase Authentication
 ### onAuthStateChange
 ```javascript
