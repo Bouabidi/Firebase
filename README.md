@@ -41,11 +41,11 @@ To use firebase cloud firestore, first you'll need to import firestore from fire
 import firestore from 'firebase/firestore';
 ```
 
-*Connect to a collection:
+- Connect to a collection:
 ````javascript
 firestore.collection('books'); // returns a collection reference called books
 ```
-*Connect to a document:*
+- Connect to a document:
 ```javascript
 firestore.doc(`/books/id`); // returns a specific document refercence 
 ```
