@@ -14,7 +14,7 @@ const app = firebase.initializeApp({
 ## Firebase Authentication
 ### onAuthStateChange
 ```javascript
-firebase.auth().onAuthStateChange(callback to return an observable)
+firebase.auth().onAuthStateChange(callback)
 ```
 
 ### Register email and password
@@ -26,7 +26,15 @@ await firebase.auth().createUserWithEmailAndPassword(email, password)
 ```javascript
 await firebase.auth().signInWithEmailAndPassword(email, password)
 ```
-
+### Signout
+```javascript
+await firebase.auth().signOut()
+```
+### Current User
+```javascript
+firebase.auth().currentUser;
+// return user or null
+```
 ## Cloud Firestore
 To use firebase cloud firestore, first you'll need to import firestore from firebase.
 ```javascript
