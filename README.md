@@ -81,3 +81,24 @@ firestore.doc(`/books/id`).update(data);  // returns a promise
 ```javascript
 firestore.doc(`/books/id`).delete(); // returns a promise
 ```
+## Working with Cloudfire store
+### Get a collection
+```javascript
+firestore.collection('posts');
+```
+### Get a single document
+```javascript
+firestore.collection('posts').doc('1234dfadf34dfs');
+```
+### Get a sub-collection within a document
+```javascript
+firestore.collection('posts').doc('1234dfadf34dfs').collection('comments');
+```
+
+### Get a document in a sub-collection within a document
+```javascript
+firestore.collection('posts').doc('1234dfadf34dfs').collection('comments').doc('33rerdf34545qd');
+
+// or
+firestore.doc('/path to the document')
+```
